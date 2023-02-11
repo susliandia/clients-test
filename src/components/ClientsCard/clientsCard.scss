@@ -1,0 +1,104 @@
+.clients {
+  display: flex;
+  justify-content: space-between;
+  min-height: 70px;
+  border-bottom: 1px solid #eeeeee;
+  margin-left: 40px;
+  margin-right: 40px;
+  align-items: center;
+  &__info-second {
+    display: flex;
+    width: 225px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__info {
+    width: 645px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    color: #292d32;
+
+    &-name {
+      width: 170px;
+    }
+    &-job {
+      width: 60px;
+      margin-right: 65px;
+    }
+    &-number {
+      margin-right: auto;
+    }
+    &-email {
+      width: 160px;
+      margin-right: 25px;
+    }
+    &-country {
+      width: 120px;
+    }
+  }
+  &__button-active {
+    width: 80px;
+    height: 29px;
+    color: #008767;
+    background-color: rgba(22, 192, 152, 0.38);
+    border: 1px solid #00b087;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+  }
+  &__button-inactive {
+    width: 80px;
+    height: 29px;
+    color: #df0404;
+    background-color: #ffc5c5;
+    border: 1px solid #df0404;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .clients__info-second {
+    padding-bottom: 15px;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 833px) {
+  .clients {
+    &__info {
+      gap: 10px;
+      padding-bottom: 10px;
+      padding-top: 10px;
+    }
+
+    &__info-email {
+      margin-right: auto;
+    }
+    &__info-second {
+      padding-bottom: 0px;
+    }
+  }
+}
+
+@media screen and (max-width: 578px) {
+  .clients__info-second {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 469px) {
+  .clients {
+    margin-left: 7px;
+  }
+}

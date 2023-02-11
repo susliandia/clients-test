@@ -1,0 +1,36 @@
+.table__header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 20px;
+
+  &-info{
+	display: flex;
+	width: 535px;
+	justify-content: space-between;
+	padding-left: 38px;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 21px;
+	letter-spacing: -0.01em;
+	color: #b5b7c0;
+  }
+  &-info_second{
+	display: flex;
+	justify-content: space-around;
+	width: 320px;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 21px;
+	letter-spacing: -0.01em;
+	color: #b5b7c0;
+  }
+}
+
+
+@media screen and (max-width: 1023px) {
+	.table__header{
+		display: none;
+	}
+ }
+ 

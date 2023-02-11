@@ -1,0 +1,14 @@
+.boxes {
+  background-color: #ffffff;
+  max-width: 968px;
+  width: 100%;
+  margin-top: 51px;
+  border-radius: 30px;
+  margin-bottom: 300px;
+}
+
+@media screen and (max-width: 469px) {
+  .boxes {
+    margin-top: 0px;
+  }
+}

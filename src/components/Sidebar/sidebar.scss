@@ -1,0 +1,149 @@
+.sidebar {
+  min-width: 305px;
+  background-color: #ffffff;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+
+  &__subtitle {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    text-align: left;
+  }
+  &__logo-title {
+    display: flex;
+    padding: 36px 0px 44px 30px;
+  }
+  &__title {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 39px;
+    letter-spacing: 0.01em;
+    margin-left: 11.45px;
+    margin-bottom: 0;
+
+    &::after {
+      content: 'v.01';
+      color: #838383;
+      font-size: 10px;
+      font-weight: 500;
+      margin-left: 4px;
+    }
+  }
+  &__arrow {
+    margin-left: auto;
+  }
+  &__profile {
+    display: flex;
+    margin-top: auto;
+    padding-left: 28px;
+    padding-bottom: 36px;
+
+    &-info {
+      margin-left: 12px;
+    }
+    &-name {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 21px;
+      letter-spacing: 0.01em;
+      margin-bottom: 0px;
+    }
+    &-job {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: 0.01em;
+      color: #757575;
+    }
+  }
+
+  &__icon {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+.sidebar__item {
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  padding: 18px 0px 18px 0px;
+  margin-right: 38px;
+  display: flex;
+  gap: 20px;
+  font-size: 16px;
+  color: #a4a6b3;
+  cursor: pointer;
+  &-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 10;
+  }
+  &-icon {
+    padding-left: 10px;
+  }
+}
+
+.sidebar__itemActive {
+  color: #ffffff;
+  .sidebar__item-background {
+    background-color: #5932ea;
+    border-radius: 8px;
+    height: 46px;
+    width: 250px;
+    z-index: -1;
+  }
+
+  svg {
+    path {
+      stroke: white;
+    }
+  }
+}
+
+@media screen and (max-width: 1105px) {
+  .sidebar {
+    max-width: 75px;
+    min-width: 0px;
+    &__logo-title {
+      padding-left: 15px;
+    }
+    &__title {
+      display: none;
+    }
+    &__subtitle {
+      display: none;
+    }
+    &__arrow {
+      display: none;
+    }
+    &__item {
+      margin-right: 0px;
+    }
+    &__profile {
+      padding-left: 7px;
+    }
+    &__profile-name {
+      display: none;
+    }
+    &__profile-job {
+      display: none;
+    }
+  }
+  .sidebar__itemActive {
+    .sidebar__item-background {
+      width: 46px;
+    }
+  }
+  .pl-30p-w10 {
+    padding-left: 10px;
+  }
+}

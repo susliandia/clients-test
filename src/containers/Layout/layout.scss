@@ -1,0 +1,23 @@
+.layout {
+  padding-top: 41px;
+  padding-left: 305px;
+}
+
+.content {
+  padding-left: 71px;
+  padding-right: 31px;
+}
+
+@media screen and (max-width: 1105px) {
+  .layout {
+    padding-top: 41px;
+    padding-left: 50px;
+  }
+}
+
+@media screen and (max-width: 469px) {
+  .content {
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+}
